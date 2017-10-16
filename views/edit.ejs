@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- ejs code for making something show on screen -->
+<h1>
+Revise Pet Info
+</h1>
+	<form action="/pets/<%= i %>/edit?_method=PUT" method="POST">
+		Name : <input type="text" name="name" value="<%= critters.name %>">
+		Animal : <input type="text" name="animal" value="<%= critters.animal %>">
+		Age : <input type="text" name="age" value="<%= critters.age %>">
+		Finished its training? : <input type="checkbox" name="isWellTrained"
+			<% if(critters.isWellTrained === true){ %>
+				checked
+				<% } %>>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
