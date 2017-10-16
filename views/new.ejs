@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ./head %>
+</head>
+<body>
+<h1>
+Welcome a New Pet
+</h1>
+	<form action="/pets/create" method="POST">
+		name: <input type="text" name="name">
+		animal: <input type="text" name="animal">
+		age: <input type="text" name="age">
+		isWellTrained: <input type="checkbox" name="isWellTrained">
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

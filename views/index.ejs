@@ -5,7 +5,14 @@
 </head>
 <body>
 	<h1>
-		Awoo
+		Menagerie
 	</h1>
+	<h3>
+		<% for (let i = 0; i < critters.length; i++){ %>
+			<%= critters[i].name %> : <%= critters[i].animal %>
+			<br>
+		<% } %>
+	</h3>
+
 </body>
 </html>
